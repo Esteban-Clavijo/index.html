@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Inscripción oficial al Evento Deportivo "Carrera 10K"">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción Carrer 10K</title>
+</head>
+
+<body bgcolor="#F4F4F4">
+
+    <!-- HEADER -->
+    <header>
+        <h1>Inscripción Oficial – Carrera 10K</h1>
+    </header>
+
+    <!-- MENÚ -->
+    <nav>
+        <a href="#">Inicio</a> |
+        <a href="#">Categorías</a> |
+        <a href="#">Inscripción</a>
+    </nav>
+
+    <main>
+
+        <!-- INFORMACIÓN DEL EVENTO -->
+        <section>
+            <h2>Información del Evento</h2>
+            <article>
+                <p><strong>Fecha:</strong> 15 de Marzo 2026</p>
+                <p><strong>Lugar:</strong> Quito – Ecuador</p>
+		<p><strong>Lugar de Inicio-Meta:</strong><a href ="https://www.google.com/maps/dir/Bus+Station+Quito+Sur,+Av.+Mariscal+Sucre+2756,+Quito+170146/Panecillo,+Quito/@-0.2665522,-78.5678308,12.75z/data=!4m15!4m14!1m5!1m1!1s0x91d5a207ab741411:0x31bedd7cb65c9bde!2m2!1d-78.5566416!2d-0.2963745!1m5!1m1!1s0x91d5999d3acf3359:0xc69149e6b03accc5!2m2!1d-78.5192298!2d-0.2303178!3e2!5i1?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D"> Terminal Terrestre "Quitumbe" – El Panecillo </p></a>
+                <p><strong>Organiza:</strong> Comité Deportivo Nacional y Bienestar Físico</p>
+            </article>
+        </section>
+        <img src="https://virgendelamerced.org/wp-content/uploads/2024/11/IMG_2828-300x201.jpg">
+        
+ <!-- TABLA DE PREMIOS -->
+       <section>
+            <h2>Categorías Disponibles</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Categoría</th>
+                        <th>Edad Mínima</th>
+                        <th>Valor Inscripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juvenil</td>
+                        <td>16 años (5K)</td>
+                        <td>$30</td>
+                    </tr>
+                    <tr>
+                        <td>Open</td>
+                        <td>18 años (7.5k)</td>
+                        <td>$50</td>
+                    </tr>
+                    <tr>
+                        <td>Master</td>
+                        <td>25 años (10K)</td>
+                        <td>$40</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+	 <section>
+            <h2>Premios</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Categoría</th>
+                        <th>Lugar</th>
+                        <th>Premio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juvenil</td>
+                        <td>Primer Lugar<br>
+			    Segundo Lugar<br>
+			    Tercer Lugar</td>
+                        <td>$100<br>
+			    $80<br>
+			    $65</td>
+                    </tr>
+                    <tr>
+                        <td>Open</td>
+                        <td>Primer Lugar<br>
+			    Segundo Lugar<br>
+			    Tercer Lugar</td>
+                        <td>$150<br>
+			    $100<br>
+			    $75</td>
+                    </tr>
+                    <tr>
+                        <td>Master</td>
+                        <td>Primer Lugar<br>
+			    Segundo Lugar<br>
+			    Tercer Lugar</td>
+                        <td>$300<br>
+			    $250<br>
+			    $200</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+	
+        <!-- FORMULARIO DE INSCRIPCIÓN -->
+        <section>
+            <h2>Formulario de Inscripción</h2>
+
+            <form action="#" method="post">
+
+                <!-- DATOS PERSONALES -->
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required minlength="3"><br><br>
+
+                <label for="apellido">Apellido:</label><br>
+                <input type="text" id="apellido" name="apellido" required minlength="3"><br><br>
+
+                <label for="cedula">Cédula:</label><br>
+                <input type="text" id="cedula" name="cedula" required pattern="[0-9]{10}"
+                       title="Debe contener 10 números"><br><br>
+
+                <label for="edad">Edad:</label><br>
+                <input type="number" id="edad" name="edad" required min="16" max="80"><br><br>
+
+                <label for="correo">Correo Electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+
+                <!-- GÉNERO (RADIO BUTTON) -->
+                <p>Género:</p>
+                <input type="radio" id="masculino" name="genero" value="Masculino" required>
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" id="femenino" name="genero" value="Femenino">
+                <label for="femenino">Femenino</label><br><br>
+
+                <!-- SELECT DE CATEGORÍA -->
+                <label for="categoria">Seleccione Categoría:</label><br>
+                <select id="categoria" name="categoria" required>
+                    <option value="">-- Seleccione --</option>
+                    <option value="Juvenil">Juvenil</option>
+                    <option value="Open">Open</option>
+                    <option value="Master">Master</option>
+                </select><br><br>
+
+                <!-- CHECKBOX -->
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">
+                    Acepto los términos y condiciones del evento
+                </label><br><br>
+
+                <!-- BOTÓN -->
+                <button type="submit">Enviar Inscripción</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Comité Deportivo Nacional Y Bienestar Físico</p>
+        <p>Contacto: estebanclavijoo123@gmail.com | Tel: 0984192851</p>
+    </footer>
+
+</body>
+</html>
